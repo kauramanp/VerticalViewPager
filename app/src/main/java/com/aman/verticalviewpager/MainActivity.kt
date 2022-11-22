@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(), ItemClick {
             "https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP.jpg",
             "Potatoes",
             "Potatoes were the first vegetable to be grown in space" ))
-        binding.viewPager.adapter = ImageAdapter(arrayList, this)
+        binding.viewPager.adapter = ImageAdapter(this, arrayList, this)
     }
 
     override fun onClick(item: Int) {
